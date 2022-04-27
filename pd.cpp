@@ -9,6 +9,7 @@ void wypisz(int x);
 int min(int x, int y);
 int max(int x, int y);
 int suma(int x, int y);
+int iloczyn(int x, int y);
 int roznica(int x, int y);
 int iloraz(int x, int y);
 void zamiana(int& x, int& y);
@@ -18,6 +19,7 @@ void zadanie();
 
 int main() {
 	srand(time(NULL));
+
 	return 0;
 }
 
@@ -40,6 +42,9 @@ int max(int x, int y) {
 }
 int suma(int x, int y) {
 	return x + y;
+}
+int iloczyn(int x, int y) {
+	return x * y;
 }
 int roznica(int x, int y) {
 	return x - y;
@@ -110,4 +115,7 @@ void zadanie() {
 	cout << "Podaj drugi index tablicy [0-99]: ";
 	cin >> y;
 	cout << "Suma = " << suma(tabi[x], tabi[y]) << endl;
+	cout << "Iloczyn = " << iloczyn(tabi[x], tabi[y]) << endl;
+	cout << "Różnica = " << roznica(tabi[x], tabi[y]) << endl;
+	cout << "Iloraz = " << iloraz(tabi[x], tabi[y]) < endl;
 }
